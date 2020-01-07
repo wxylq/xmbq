@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>熊猫版权引流神器官网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="icon" href="data:;base64,=">
+	    <link rel="stylesheet" href="http://abco.oss-accelerate.aliyuncs.com/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome.min.css">
+	<link rel="stylesheet" href="http://abco.oss-accelerate.aliyuncs.com/bootstrap-theme.css">
+	<link rel="stylesheet" href="http://abco.oss-accelerate.aliyuncs.com/sweetalert.css">
+	<script>
+	var COOKIE_PRE = '5F25_';var _CHARSET = 'utf-8';var SITEURL = 'http://xxx.abco.wang/shop';var SHOP_SITE_URL = 'http://xxx.abco.wang/shop';var RESOURCE_SITE_URL = 'http://xxx.abco.wang/data/resource';var RESOURCE_SITE_URL = 'http://xxx.abco.wang/data/resource';var SHOP_TEMPLATES_URL = 'http://xxx.abco.wang/shop/templates/default';
+	</script>
+		<script src="http://abco.oss-accelerate.aliyuncs.com/jquery.js"></script>
+	<script src="http://abco.oss-accelerate.aliyuncs.com/jquery.ui.js"></script>
+	<script src="http://abco.oss-accelerate.aliyuncs.com/common.js"></script>
+	<script src="http://abco.oss-accelerate.aliyuncs.com/jquery.validation.min.js"></script>
+	<script src="http://abco.oss-accelerate.aliyuncs.com/jquery.masonry.js"></script>
+	<script src="http://xxx.abco.wang/data/resource/js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://abco.oss-accelerate.aliyuncs.com/jquery.lazyload.js"></script>
+</head>
+<body>
+	  	<script type="text/javascript" color="255,0,0" opacity="0.5" count="99" src="http://abco.oss-accelerate.aliyuncs.com/canvas-nest.min.js"></script>
+	<canvas id="c_n9" width="1363" height="781" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+    <script type="text/javascript" alpha="0.2" src="http://abco.oss-accelerate.aliyuncs.com/ribbon.min.js"></script>
+	<div class="page-top">
+	    <h4>QQ引流神器</h4>
+	</div>
+	<div class="page-nav">
+        <div class="space-20"></div>
+        			        	<a href="https://dev-081.baidupan.com/f13ee1090468d7cc54f51744b59110c4/1578387817/2019/12/23/9ea7541f7a7ce27557784497e541e51e.apk?filename=%E7%86%8A%E7%8C%AB%E7%89%88%E6%9D%83.apk" class="btn btn-danger">下载</a>
+		            &nbsp;
+		            <a href="http://url.cn/5Xjwf0i" class="btn btn-success">代理</a>
+			        &nbsp;
+			        <a href="https://jq.qq.com/?_wv=1027&k=5jQdzSM" class="btn btn-inverse">加群</a>
+			        &nbsp;
+			        <a href="http://url.cn/5Xjwf0i" class="btn btn-default">介绍</a>
+	                <div class="space-20"></div>
+    </div>
+    
+	
+<p class="page-title">小白一键生成<br/>每天更新软件提供引流<br/>加官方群获取更多软件
+</p><div class="page-content">
+        <div class="row">
+            <div class="col-sm-12">
+			    <div class="space-10"></div>
+			    <form id="activity_form" class="nc-login-form" method="post" action="../yunhu/index.php?act=activity&op=index">
+		            <input type='hidden' name='formhash' value='9XZ8EKB9Q2TyV_HF3vMPcS7_kk8RpLm' />		            <input type="hidden" name="form_submit" value="ok" />
+		            <input name="nchash" type="hidden" value="cd294e3d" />
+			        <div class="form-group">
+			            <label class="control-label col-sm-2"></label>
+			            <div class="col-sm-10">
+			                <div class="input-group">
+			                    
+			                    
+                          
+			                </div>			            </div>
+			        </div>
+			    </form>
+            </div>
+        </div>
+</div>
+<br/><br/><br/><br/><br/><br/>
+
+<!-- PublicHeadLayout End -->
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+
+
+<script>
+$(function(){
+	var code = getCookie("code");
+	if(code) {
+		$('#code').val(code);
+	}
+	$("#activity_form").validate({
+	    errorPlacement: function(error, element){
+	        var error_td = element;//.parent('dd')
+	        error_td.append(error);
+	        element.addClass('error');//.parents('dl:first')
+	    },
+	    success: function(label) {
+	        label.removeClass('error').find('label').remove();//.parents('dl:first')
+	    },
+		submitHandler:function(form){
+		    ajaxpost('activity_form', '', '', 'onerror');
+			SetCookie("code",$('#code').val());
+		},
+	    onkeyup: false,
+		rules: {
+			code: "required"
+		},
+		messages: {
+			code: "<i class='icon-exclamation-sign'></i>请输入激活码"
+		}
+	});
+});
+//showDialog('123', 'alert', null, null, 1, null, null, null, null, 2, null);
+/* 
+功能：保存cookies函数  
+参数：name，cookie名字；value，值 
+*/  
+function SetCookie(name,value){  
+	var Days = 30*12;   //cookie 将被保存一年  
+	var exp  = new Date();  //获得当前时间  
+	exp.setTime(exp.getTime() + Days*24*60*60*1000);  //换成毫秒  
+	document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();  
+}   
+/* 
+功能：获取cookies函数  
+参数：name，cookie名字 
+*/  
+function getCookie(name){  
+	var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));  
+	if(arr != null){  
+	 return unescape(arr[2]);   
+	}else{  
+	 return null;  
+	}  
+}   
+/* 
+功能：删除cookies函数  
+参数：name，cookie名字 
+*/  
+
+function delCookie(name){  
+	var exp = new Date();  //当前时间  
+	exp.setTime(exp.getTime() - 1);  
+	var cval=getCookie(name);  
+	if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();  
+}
+
+</script>
+
+	<div class="page-footer">
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+                        <th width="90"><img src="http://abco.oss-accelerate.aliyuncs.com/QQ.png">客服QQ</th>
+            <td>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456789&site=qq&menu=yes" target="_blank">759267767</a>
+            </td>
+        </tr>
+        <tr>
+                        <th><img src="http://abco.oss-accelerate.aliyuncs.com/wechat.png">微信号</th>
+            <td>759267767</td>
+        </tr>
+        <tr>
+            <th>在线公告：</th>
+            <td>流量引流神器</td>
+        </tr>
+    	</tbody>
+    </table>
+</div>      </body>
+</html>
+</body>
+</html>
